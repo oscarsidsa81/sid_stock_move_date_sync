@@ -10,8 +10,6 @@
         "stock",
         "purchase_stock",
         "sale_stock",
-        "sid_purchase_core",
-        "sid_sale_line_core",
         "oct_fecha_contrato_compras",
         "oct_fecha_contrato_ventas",
     ],
