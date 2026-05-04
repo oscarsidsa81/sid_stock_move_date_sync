@@ -14,13 +14,6 @@ class PurchaseOrderLine(models.Model):
 
         changed_vals = changed_vals or {}
 
-        if "contract_date" in changed_vals:
-            return self.contract_date or False
-        if "estimated_date" in changed_vals:
-            return self.estimated_date or False
-        if "state" in changed_vals:
-            return self.contract_date or self.estimated_date or False
-
         return self.contract_date or self.estimated_date or False
 
     def _sid_get_purchase_sync_moves(self):
